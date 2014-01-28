@@ -1,3 +1,3 @@
 Tickets
 =======
-App is working with ticket.meteor.com web API 
+App is working with http://ticket.meteor.com web API 
