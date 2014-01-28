@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7AD9232C139B4110BDF0606A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 830038CEDBBC46A1B4D866BB /* libPods.a */; };
+		E70692CC1895770B00294C0F /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = E70692CB1895770B00294C0F /* Image.m */; };
+		E70692CF189597B700294C0F /* TBTicketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E70692CE189597B700294C0F /* TBTicketCell.m */; };
+		E736CCC618166A8200B8E85C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E736CCC518166A8200B8E85C /* User.m */; };
+		E736CCC918166A9700B8E85C /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = E736CCC818166A9700B8E85C /* Event.m */; };
+		E75559BA17FEF94A009340E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75559B917FEF94A009340E6 /* Foundation.framework */; };
+		E75559BC17FEF94A009340E6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75559BB17FEF94A009340E6 /* CoreGraphics.framework */; };
+		E75559BE17FEF94A009340E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75559BD17FEF94A009340E6 /* UIKit.framework */; };
+		E75559C417FEF94A009340E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E75559C217FEF94A009340E6 /* InfoPlist.strings */; };
+		E75559C617FEF94A009340E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E75559C517FEF94A009340E6 /* main.m */; };
+		E75559CA17FEF94A009340E6 /* TBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E75559C917FEF94A009340E6 /* TBAppDelegate.m */; };
+		E75559CD17FEF94A009340E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75559CB17FEF94A009340E6 /* Main.storyboard */; };
+		E75559D217FEF94A009340E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E75559D117FEF94A009340E6 /* Images.xcassets */; };
+		E75559D917FEF94A009340E6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75559D817FEF94A009340E6 /* XCTest.framework */; };
+		E75559DA17FEF94A009340E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75559B917FEF94A009340E6 /* Foundation.framework */; };
+		E75559DB17FEF94A009340E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75559BD17FEF94A009340E6 /* UIKit.framework */; };
+		E75559E317FEF94A009340E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E75559E117FEF94A009340E6 /* InfoPlist.strings */; };
+		E75559E517FEF94A009340E6 /* TicketBuyingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E75559E417FEF94A009340E6 /* TicketBuyingTests.m */; };
+		E75559F017FEFDD5009340E6 /* TBCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E75559EF17FEFDD5009340E6 /* TBCollectionCell.m */; };
+		E7727D4F1896C6FF00C02E82 /* TBAddEventController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7727D4E1896C6FF00C02E82 /* TBAddEventController.m */; };
+		E7727D521896C83E00C02E82 /* TBTextfieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7727D511896C83E00C02E82 /* TBTextfieldCell.m */; };
+		E7727D551896D60200C02E82 /* UIView+FindFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = E7727D541896D60200C02E82 /* UIView+FindFirstResponder.m */; };
+		E7727D581896E25300C02E82 /* DateInputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7727D571896E25300C02E82 /* DateInputTableViewCell.m */; };
+		E7914F641803D76200364AA4 /* ticket_table_devider.png in Resources */ = {isa = PBXBuildFile; fileRef = E7914F5F1803D76200364AA4 /* ticket_table_devider.png */; };
+		E7914F651803D76200364AA4 /* ticket_date_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7914F601803D76200364AA4 /* ticket_date_icon@2x.png */; };
+		E7914F661803D76200364AA4 /* ticket_booknow_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7914F611803D76200364AA4 /* ticket_booknow_button@2x.png */; };
+		E7914F671803D76200364AA4 /* ticket_location_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7914F621803D76200364AA4 /* ticket_location_icon@2x.png */; };
+		E7914F681803D76200364AA4 /* ticket_price@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7914F631803D76200364AA4 /* ticket_price@2x.png */; };
+		E791959F1802C5CC00FDC66B /* TBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E791959E1802C5CC00FDC66B /* TBViewController.m */; };
+		E79195A21802C99900FDC66B /* TBDescriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E79195A11802C99900FDC66B /* TBDescriptionCell.m */; };
+		E79195A51802D55100FDC66B /* TBPriceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E79195A41802D55100FDC66B /* TBPriceCell.m */; };
+		E79195A81802DABE00FDC66B /* TBAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E79195A71802DABE00FDC66B /* TBAddressCell.m */; };
+		E79195AC1802DAF800FDC66B /* cal.png in Resources */ = {isa = PBXBuildFile; fileRef = E79195AA1802DAF800FDC66B /* cal.png */; };
+		E79195AD1802DAF800FDC66B /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = E79195AB1802DAF800FDC66B /* point.png */; };
+		E79195B01802E32F00FDC66B /* currentPage.png in Resources */ = {isa = PBXBuildFile; fileRef = E79195AE1802E32F00FDC66B /* currentPage.png */; };
+		E79195B11802E32F00FDC66B /* page.png in Resources */ = {isa = PBXBuildFile; fileRef = E79195AF1802E32F00FDC66B /* page.png */; };
+		E794AAA31803EC1400B67243 /* TBDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E794AAA21803EC1400B67243 /* TBDateCell.m */; };
+		E794AAA61803F31C00B67243 /* TBBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E794AAA51803F31C00B67243 /* TBBookCell.m */; };
+		E794AAA818040CA400B67243 /* ticket_cell_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E794AAA718040CA400B67243 /* ticket_cell_arrow@2x.png */; };
+		E794AAAE1804107600B67243 /* TBMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = E794AAAD1804107600B67243 /* TBMapController.m */; };
+		E794AAB0180410BC00B67243 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E794AAAF180410BC00B67243 /* MapKit.framework */; };
+		E794AAB31804111400B67243 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E794AAB21804111400B67243 /* Annotation.m */; };
+		E794AAB51804117C00B67243 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E794AAB41804117C00B67243 /* CoreLocation.framework */; };
+		E794AAB91804415700B67243 /* TBWebEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E794AAB81804415700B67243 /* TBWebEngine.m */; };
+		E794AABF1804420400B67243 /* NSEntityDescription+RKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E794AABC1804420400B67243 /* NSEntityDescription+RKAdditions.m */; };
+		E794AAC01804420400B67243 /* NSManagedObject+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = E794AABE1804420400B67243 /* NSManagedObject+ActiveRecord.m */; };
+		E794AAC21804429C00B67243 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E794AAC11804429C00B67243 /* CoreData.framework */; };
+		E794AAC6180442DE00B67243 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E794AAC4180442DE00B67243 /* Model.xcdatamodeld */; };
+		E799107A18055351005CC9C8 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E799107918055351005CC9C8 /* CoreText.framework */; };
+		E799107D18058253005CC9C8 /* TBLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = E799107C18058253005CC9C8 /* TBLoginController.m */; };
+		E799108018058376005CC9C8 /* TBEventsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E799107F18058376005CC9C8 /* TBEventsController.m */; };
+		E7991083180585F5005CC9C8 /* TBLoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E7991082180585F5005CC9C8 /* TBLoginInfo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E75559DC17FEF94A009340E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E75559AE17FEF949009340E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E75559B517FEF94A009340E6;
+			remoteInfo = TicketBuying;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54DDC1C866EB4B519A9AF1C8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		830038CEDBBC46A1B4D866BB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E70692CA1895770B00294C0F /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Image.h; path = CoreData/Image.h; sourceTree = "<group>"; };
+		E70692CB1895770B00294C0F /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Image.m; path = CoreData/Image.m; sourceTree = "<group>"; };
+		E70692CD189597B700294C0F /* TBTicketCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBTicketCell.h; path = TicketBuying/Cells/TBTicketCell.h; sourceTree = "<group>"; };
+		E70692CE189597B700294C0F /* TBTicketCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBTicketCell.m; path = TicketBuying/Cells/TBTicketCell.m; sourceTree = "<group>"; };
+		E736CCC418166A8200B8E85C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = CoreData/User.h; sourceTree = "<group>"; };
+		E736CCC518166A8200B8E85C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = CoreData/User.m; sourceTree = "<group>"; };
+		E736CCC718166A9700B8E85C /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		E736CCC818166A9700B8E85C /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		E75559B617FEF94A009340E6 /* TicketBuying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketBuying.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E75559B917FEF94A009340E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E75559BB17FEF94A009340E6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E75559BD17FEF94A009340E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E75559C117FEF94A009340E6 /* TicketBuying-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TicketBuying-Info.plist"; sourceTree = "<group>"; };
+		E75559C317FEF94A009340E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E75559C517FEF94A009340E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E75559C717FEF94A009340E6 /* TicketBuying-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TicketBuying-Prefix.pch"; sourceTree = "<group>"; };
+		E75559C817FEF94A009340E6 /* TBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBAppDelegate.h; sourceTree = "<group>"; };
+		E75559C917FEF94A009340E6 /* TBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBAppDelegate.m; sourceTree = "<group>"; };
+		E75559CC17FEF94A009340E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E75559D117FEF94A009340E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E75559D717FEF94A009340E6 /* TicketBuyingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketBuyingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E75559D817FEF94A009340E6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E75559E017FEF94A009340E6 /* TicketBuyingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TicketBuyingTests-Info.plist"; sourceTree = "<group>"; };
+		E75559E217FEF94A009340E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E75559E417FEF94A009340E6 /* TicketBuyingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketBuyingTests.m; sourceTree = "<group>"; };
+		E75559EE17FEFDD5009340E6 /* TBCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBCollectionCell.h; path = TicketBuying/Cells/TBCollectionCell.h; sourceTree = "<group>"; };
+		E75559EF17FEFDD5009340E6 /* TBCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBCollectionCell.m; path = TicketBuying/Cells/TBCollectionCell.m; sourceTree = "<group>"; };
+		E7727D4D1896C6FF00C02E82 /* TBAddEventController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBAddEventController.h; path = TicketBuying/Controllers/TBAddEventController.h; sourceTree = "<group>"; };
+		E7727D4E1896C6FF00C02E82 /* TBAddEventController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBAddEventController.m; path = TicketBuying/Controllers/TBAddEventController.m; sourceTree = "<group>"; };
+		E7727D501896C83E00C02E82 /* TBTextfieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBTextfieldCell.h; path = TicketBuying/Cells/TBTextfieldCell.h; sourceTree = "<group>"; };
+		E7727D511896C83E00C02E82 /* TBTextfieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBTextfieldCell.m; path = TicketBuying/Cells/TBTextfieldCell.m; sourceTree = "<group>"; };
+		E7727D531896D60200C02E82 /* UIView+FindFirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FindFirstResponder.h"; sourceTree = "<group>"; };
+		E7727D541896D60200C02E82 /* UIView+FindFirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FindFirstResponder.m"; sourceTree = "<group>"; };
+		E7727D561896E25300C02E82 /* DateInputTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateInputTableViewCell.h; sourceTree = "<group>"; };
+		E7727D571896E25300C02E82 /* DateInputTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateInputTableViewCell.m; sourceTree = "<group>"; };
+		E77388B91816672200EA6140 /* Model 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 4.xcdatamodel"; sourceTree = "<group>"; };
+		E78DA952180812E6007D93A7 /* Model 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 3.xcdatamodel"; sourceTree = "<group>"; };
+		E7914F5F1803D76200364AA4 /* ticket_table_devider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ticket_table_devider.png; sourceTree = "<group>"; };
+		E7914F601803D76200364AA4 /* ticket_date_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ticket_date_icon@2x.png"; sourceTree = "<group>"; };
+		E7914F611803D76200364AA4 /* ticket_booknow_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ticket_booknow_button@2x.png"; sourceTree = "<group>"; };
+		E7914F621803D76200364AA4 /* ticket_location_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ticket_location_icon@2x.png"; sourceTree = "<group>"; };
+		E7914F631803D76200364AA4 /* ticket_price@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ticket_price@2x.png"; sourceTree = "<group>"; };
+		E791959D1802C5CC00FDC66B /* TBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBViewController.h; path = TicketBuying/Controllers/TBViewController.h; sourceTree = "<group>"; };
+		E791959E1802C5CC00FDC66B /* TBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBViewController.m; path = TicketBuying/Controllers/TBViewController.m; sourceTree = "<group>"; };
+		E79195A01802C99900FDC66B /* TBDescriptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBDescriptionCell.h; path = TicketBuying/Cells/TBDescriptionCell.h; sourceTree = "<group>"; };
+		E79195A11802C99900FDC66B /* TBDescriptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBDescriptionCell.m; path = TicketBuying/Cells/TBDescriptionCell.m; sourceTree = "<group>"; };
+		E79195A31802D55100FDC66B /* TBPriceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBPriceCell.h; path = TicketBuying/Cells/TBPriceCell.h; sourceTree = "<group>"; };
+		E79195A41802D55100FDC66B /* TBPriceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBPriceCell.m; path = TicketBuying/Cells/TBPriceCell.m; sourceTree = "<group>"; };
+		E79195A61802DABE00FDC66B /* TBAddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBAddressCell.h; path = TicketBuying/Cells/TBAddressCell.h; sourceTree = "<group>"; };
+		E79195A71802DABE00FDC66B /* TBAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBAddressCell.m; path = TicketBuying/Cells/TBAddressCell.m; sourceTree = "<group>"; };
+		E79195AA1802DAF800FDC66B /* cal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cal.png; sourceTree = "<group>"; };
+		E79195AB1802DAF800FDC66B /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
+		E79195AE1802E32F00FDC66B /* currentPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = currentPage.png; sourceTree = "<group>"; };
+		E79195AF1802E32F00FDC66B /* page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page.png; sourceTree = "<group>"; };
+		E794AAA11803EC1400B67243 /* TBDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBDateCell.h; path = TicketBuying/Cells/TBDateCell.h; sourceTree = "<group>"; };
+		E794AAA21803EC1400B67243 /* TBDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBDateCell.m; path = TicketBuying/Cells/TBDateCell.m; sourceTree = "<group>"; };
+		E794AAA41803F31C00B67243 /* TBBookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBBookCell.h; path = TicketBuying/Cells/TBBookCell.h; sourceTree = "<group>"; };
+		E794AAA51803F31C00B67243 /* TBBookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBookCell.m; path = TicketBuying/Cells/TBBookCell.m; sourceTree = "<group>"; };
+		E794AAA718040CA400B67243 /* ticket_cell_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ticket_cell_arrow@2x.png"; sourceTree = "<group>"; };
+		E794AAAC1804107600B67243 /* TBMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBMapController.h; path = TicketBuying/Controllers/TBMapController.h; sourceTree = "<group>"; };
+		E794AAAD1804107600B67243 /* TBMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBMapController.m; path = TicketBuying/Controllers/TBMapController.m; sourceTree = "<group>"; };
+		E794AAAF180410BC00B67243 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E794AAB11804111400B67243 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		E794AAB21804111400B67243 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		E794AAB41804117C00B67243 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E794AAB71804415700B67243 /* TBWebEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBWebEngine.h; path = Network/TBWebEngine.h; sourceTree = "<group>"; };
+		E794AAB81804415700B67243 /* TBWebEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBWebEngine.m; path = Network/TBWebEngine.m; sourceTree = "<group>"; };
+		E794AABB1804420400B67243 /* NSEntityDescription+RKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSEntityDescription+RKAdditions.h"; path = "Categories/NSEntityDescription+RKAdditions.h"; sourceTree = "<group>"; };
+		E794AABC1804420400B67243 /* NSEntityDescription+RKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSEntityDescription+RKAdditions.m"; path = "Categories/NSEntityDescription+RKAdditions.m"; sourceTree = "<group>"; };
+		E794AABD1804420400B67243 /* NSManagedObject+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+ActiveRecord.h"; path = "Categories/NSManagedObject+ActiveRecord.h"; sourceTree = "<group>"; };
+		E794AABE1804420400B67243 /* NSManagedObject+ActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+ActiveRecord.m"; path = "Categories/NSManagedObject+ActiveRecord.m"; sourceTree = "<group>"; };
+		E794AAC11804429C00B67243 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E794AAC5180442DE00B67243 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		E799107918055351005CC9C8 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		E799107B18058253005CC9C8 /* TBLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBLoginController.h; path = TicketBuying/Controllers/TBLoginController.h; sourceTree = "<group>"; };
+		E799107C18058253005CC9C8 /* TBLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBLoginController.m; path = TicketBuying/Controllers/TBLoginController.m; sourceTree = "<group>"; };
+		E799107E18058376005CC9C8 /* TBEventsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBEventsController.h; path = TicketBuying/Controllers/TBEventsController.h; sourceTree = "<group>"; };
+		E799107F18058376005CC9C8 /* TBEventsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBEventsController.m; path = TicketBuying/Controllers/TBEventsController.m; sourceTree = "<group>"; };
+		E7991081180585F5005CC9C8 /* TBLoginInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBLoginInfo.h; sourceTree = "<group>"; };
+		E7991082180585F5005CC9C8 /* TBLoginInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBLoginInfo.m; sourceTree = "<group>"; };
+		E79910841805A38A005CC9C8 /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E75559B317FEF94A009340E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E799107A18055351005CC9C8 /* CoreText.framework in Frameworks */,
+				E794AAC21804429C00B67243 /* CoreData.framework in Frameworks */,
+				E794AAB51804117C00B67243 /* CoreLocation.framework in Frameworks */,
+				E794AAB0180410BC00B67243 /* MapKit.framework in Frameworks */,
+				E75559BC17FEF94A009340E6 /* CoreGraphics.framework in Frameworks */,
+				E75559BE17FEF94A009340E6 /* UIKit.framework in Frameworks */,
+				E75559BA17FEF94A009340E6 /* Foundation.framework in Frameworks */,
+				7AD9232C139B4110BDF0606A /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E75559D417FEF94A009340E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E75559D917FEF94A009340E6 /* XCTest.framework in Frameworks */,
+				E75559DB17FEF94A009340E6 /* UIKit.framework in Frameworks */,
+				E75559DA17FEF94A009340E6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E75559AD17FEF949009340E6 = {
+			isa = PBXGroup;
+			children = (
+				E75559BF17FEF94A009340E6 /* TicketBuying */,
+				E75559DE17FEF94A009340E6 /* TicketBuyingTests */,
+				E75559B817FEF94A009340E6 /* Frameworks */,
+				E75559B717FEF94A009340E6 /* Products */,
+				54DDC1C866EB4B519A9AF1C8 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		E75559B717FEF94A009340E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E75559B617FEF94A009340E6 /* TicketBuying.app */,
+				E75559D717FEF94A009340E6 /* TicketBuyingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E75559B817FEF94A009340E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E799107918055351005CC9C8 /* CoreText.framework */,
+				E794AAC11804429C00B67243 /* CoreData.framework */,
+				E794AAB41804117C00B67243 /* CoreLocation.framework */,
+				E794AAAF180410BC00B67243 /* MapKit.framework */,
+				E75559B917FEF94A009340E6 /* Foundation.framework */,
+				E75559BB17FEF94A009340E6 /* CoreGraphics.framework */,
+				E75559BD17FEF94A009340E6 /* UIKit.framework */,
+				E75559D817FEF94A009340E6 /* XCTest.framework */,
+				830038CEDBBC46A1B4D866BB /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E75559BF17FEF94A009340E6 /* TicketBuying */ = {
+			isa = PBXGroup;
+			children = (
+				E794AAC3180442BF00B67243 /* CoreData */,
+				E794AABA180441E600B67243 /* Categories */,
+				E794AAB61804411300B67243 /* Network */,
+				E791959B1802BBE300FDC66B /* Cells */,
+				E791959C1802BE8600FDC66B /* Controllers */,
+				E75559C817FEF94A009340E6 /* TBAppDelegate.h */,
+				E75559C917FEF94A009340E6 /* TBAppDelegate.m */,
+				E7991081180585F5005CC9C8 /* TBLoginInfo.h */,
+				E7991082180585F5005CC9C8 /* TBLoginInfo.m */,
+				E75559CB17FEF94A009340E6 /* Main.storyboard */,
+				E75559D117FEF94A009340E6 /* Images.xcassets */,
+				E75559C017FEF94A009340E6 /* Supporting Files */,
+			);
+			path = TicketBuying;
+			sourceTree = "<group>";
+		};
+		E75559C017FEF94A009340E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E794AAB11804111400B67243 /* Annotation.h */,
+				E794AAB21804111400B67243 /* Annotation.m */,
+				E79195A91802DACA00FDC66B /* Images */,
+				E75559C117FEF94A009340E6 /* TicketBuying-Info.plist */,
+				E75559C217FEF94A009340E6 /* InfoPlist.strings */,
+				E75559C517FEF94A009340E6 /* main.m */,
+				E75559C717FEF94A009340E6 /* TicketBuying-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E75559DE17FEF94A009340E6 /* TicketBuyingTests */ = {
+			isa = PBXGroup;
+			children = (
+				E75559E417FEF94A009340E6 /* TicketBuyingTests.m */,
+				E75559DF17FEF94A009340E6 /* Supporting Files */,
+			);
+			path = TicketBuyingTests;
+			sourceTree = "<group>";
+		};
+		E75559DF17FEF94A009340E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E75559E017FEF94A009340E6 /* TicketBuyingTests-Info.plist */,
+				E75559E117FEF94A009340E6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E791959B1802BBE300FDC66B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E7727D561896E25300C02E82 /* DateInputTableViewCell.h */,
+				E7727D571896E25300C02E82 /* DateInputTableViewCell.m */,
+				E75559EE17FEFDD5009340E6 /* TBCollectionCell.h */,
+				E75559EF17FEFDD5009340E6 /* TBCollectionCell.m */,
+				E79195A01802C99900FDC66B /* TBDescriptionCell.h */,
+				E79195A11802C99900FDC66B /* TBDescriptionCell.m */,
+				E79195A31802D55100FDC66B /* TBPriceCell.h */,
+				E79195A41802D55100FDC66B /* TBPriceCell.m */,
+				E79195A61802DABE00FDC66B /* TBAddressCell.h */,
+				E79195A71802DABE00FDC66B /* TBAddressCell.m */,
+				E794AAA11803EC1400B67243 /* TBDateCell.h */,
+				E794AAA21803EC1400B67243 /* TBDateCell.m */,
+				E794AAA41803F31C00B67243 /* TBBookCell.h */,
+				E794AAA51803F31C00B67243 /* TBBookCell.m */,
+				E70692CD189597B700294C0F /* TBTicketCell.h */,
+				E70692CE189597B700294C0F /* TBTicketCell.m */,
+				E7727D501896C83E00C02E82 /* TBTextfieldCell.h */,
+				E7727D511896C83E00C02E82 /* TBTextfieldCell.m */,
+			);
+			name = Cells;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E791959C1802BE8600FDC66B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E791959D1802C5CC00FDC66B /* TBViewController.h */,
+				E791959E1802C5CC00FDC66B /* TBViewController.m */,
+				E794AAAC1804107600B67243 /* TBMapController.h */,
+				E794AAAD1804107600B67243 /* TBMapController.m */,
+				E799107B18058253005CC9C8 /* TBLoginController.h */,
+				E799107C18058253005CC9C8 /* TBLoginController.m */,
+				E799107E18058376005CC9C8 /* TBEventsController.h */,
+				E799107F18058376005CC9C8 /* TBEventsController.m */,
+				E7727D4D1896C6FF00C02E82 /* TBAddEventController.h */,
+				E7727D4E1896C6FF00C02E82 /* TBAddEventController.m */,
+			);
+			name = Controllers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E79195A91802DACA00FDC66B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E794AAA718040CA400B67243 /* ticket_cell_arrow@2x.png */,
+				E7914F5F1803D76200364AA4 /* ticket_table_devider.png */,
+				E7914F601803D76200364AA4 /* ticket_date_icon@2x.png */,
+				E7914F611803D76200364AA4 /* ticket_booknow_button@2x.png */,
+				E7914F621803D76200364AA4 /* ticket_location_icon@2x.png */,
+				E7914F631803D76200364AA4 /* ticket_price@2x.png */,
+				E79195AE1802E32F00FDC66B /* currentPage.png */,
+				E79195AF1802E32F00FDC66B /* page.png */,
+				E79195AA1802DAF800FDC66B /* cal.png */,
+				E79195AB1802DAF800FDC66B /* point.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		E794AAB61804411300B67243 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E794AAB71804415700B67243 /* TBWebEngine.h */,
+				E794AAB81804415700B67243 /* TBWebEngine.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		E794AABA180441E600B67243 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E794AABB1804420400B67243 /* NSEntityDescription+RKAdditions.h */,
+				E794AABC1804420400B67243 /* NSEntityDescription+RKAdditions.m */,
+				E794AABD1804420400B67243 /* NSManagedObject+ActiveRecord.h */,
+				E794AABE1804420400B67243 /* NSManagedObject+ActiveRecord.m */,
+				E7727D531896D60200C02E82 /* UIView+FindFirstResponder.h */,
+				E7727D541896D60200C02E82 /* UIView+FindFirstResponder.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		E794AAC3180442BF00B67243 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E794AAC4180442DE00B67243 /* Model.xcdatamodeld */,
+				E736CCC418166A8200B8E85C /* User.h */,
+				E736CCC518166A8200B8E85C /* User.m */,
+				E736CCC718166A9700B8E85C /* Event.h */,
+				E736CCC818166A9700B8E85C /* Event.m */,
+				E70692CA1895770B00294C0F /* Image.h */,
+				E70692CB1895770B00294C0F /* Image.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E75559B517FEF94A009340E6 /* TicketBuying */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E75559E817FEF94A009340E6 /* Build configuration list for PBXNativeTarget "TicketBuying" */;
+			buildPhases = (
+				F5FDF57F9043428B94B1853E /* Check Pods Manifest.lock */,
+				E75559B217FEF94A009340E6 /* Sources */,
+				E75559B317FEF94A009340E6 /* Frameworks */,
+				E75559B417FEF94A009340E6 /* Resources */,
+				1DD8186085B14966B2EEA73E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TicketBuying;
+			productName = TicketBuying;
+			productReference = E75559B617FEF94A009340E6 /* TicketBuying.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E75559D617FEF94A009340E6 /* TicketBuyingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E75559EB17FEF94A009340E6 /* Build configuration list for PBXNativeTarget "TicketBuyingTests" */;
+			buildPhases = (
+				E75559D317FEF94A009340E6 /* Sources */,
+				E75559D417FEF94A009340E6 /* Frameworks */,
+				E75559D517FEF94A009340E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E75559DD17FEF94A009340E6 /* PBXTargetDependency */,
+			);
+			name = TicketBuyingTests;
+			productName = TicketBuyingTests;
+			productReference = E75559D717FEF94A009340E6 /* TicketBuyingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E75559AE17FEF949009340E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TB;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Rost's company";
+				TargetAttributes = {
+					E75559D617FEF94A009340E6 = {
+						TestTargetID = E75559B517FEF94A009340E6;
+					};
+				};
+			};
+			buildConfigurationList = E75559B117FEF949009340E6 /* Build configuration list for PBXProject "TicketBuying" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E75559AD17FEF949009340E6;
+			productRefGroup = E75559B717FEF94A009340E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E75559B517FEF94A009340E6 /* TicketBuying */,
+				E75559D617FEF94A009340E6 /* TicketBuyingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E75559B417FEF94A009340E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7914F671803D76200364AA4 /* ticket_location_icon@2x.png in Resources */,
+				E7914F641803D76200364AA4 /* ticket_table_devider.png in Resources */,
+				E79195B01802E32F00FDC66B /* currentPage.png in Resources */,
+				E75559D217FEF94A009340E6 /* Images.xcassets in Resources */,
+				E75559C417FEF94A009340E6 /* InfoPlist.strings in Resources */,
+				E79195AD1802DAF800FDC66B /* point.png in Resources */,
+				E7914F681803D76200364AA4 /* ticket_price@2x.png in Resources */,
+				E794AAA818040CA400B67243 /* ticket_cell_arrow@2x.png in Resources */,
+				E79195B11802E32F00FDC66B /* page.png in Resources */,
+				E7914F661803D76200364AA4 /* ticket_booknow_button@2x.png in Resources */,
+				E7914F651803D76200364AA4 /* ticket_date_icon@2x.png in Resources */,
+				E79195AC1802DAF800FDC66B /* cal.png in Resources */,
+				E75559CD17FEF94A009340E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E75559D517FEF94A009340E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E75559E317FEF94A009340E6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DD8186085B14966B2EEA73E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5FDF57F9043428B94B1853E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E75559B217FEF94A009340E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E791959F1802C5CC00FDC66B /* TBViewController.m in Sources */,
+				E75559CA17FEF94A009340E6 /* TBAppDelegate.m in Sources */,
+				E794AAC6180442DE00B67243 /* Model.xcdatamodeld in Sources */,
+				E794AAC01804420400B67243 /* NSManagedObject+ActiveRecord.m in Sources */,
+				E79195A21802C99900FDC66B /* TBDescriptionCell.m in Sources */,
+				E7727D4F1896C6FF00C02E82 /* TBAddEventController.m in Sources */,
+				E799108018058376005CC9C8 /* TBEventsController.m in Sources */,
+				E70692CC1895770B00294C0F /* Image.m in Sources */,
+				E736CCC918166A9700B8E85C /* Event.m in Sources */,
+				E794AAA31803EC1400B67243 /* TBDateCell.m in Sources */,
+				E736CCC618166A8200B8E85C /* User.m in Sources */,
+				E7727D521896C83E00C02E82 /* TBTextfieldCell.m in Sources */,
+				E794AAA61803F31C00B67243 /* TBBookCell.m in Sources */,
+				E70692CF189597B700294C0F /* TBTicketCell.m in Sources */,
+				E79195A81802DABE00FDC66B /* TBAddressCell.m in Sources */,
+				E799107D18058253005CC9C8 /* TBLoginController.m in Sources */,
+				E7991083180585F5005CC9C8 /* TBLoginInfo.m in Sources */,
+				E794AAB91804415700B67243 /* TBWebEngine.m in Sources */,
+				E7727D581896E25300C02E82 /* DateInputTableViewCell.m in Sources */,
+				E75559C617FEF94A009340E6 /* main.m in Sources */,
+				E7727D551896D60200C02E82 /* UIView+FindFirstResponder.m in Sources */,
+				E794AAB31804111400B67243 /* Annotation.m in Sources */,
+				E75559F017FEFDD5009340E6 /* TBCollectionCell.m in Sources */,
+				E794AAAE1804107600B67243 /* TBMapController.m in Sources */,
+				E794AABF1804420400B67243 /* NSEntityDescription+RKAdditions.m in Sources */,
+				E79195A51802D55100FDC66B /* TBPriceCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E75559D317FEF94A009340E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E75559E517FEF94A009340E6 /* TicketBuyingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E75559DD17FEF94A009340E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E75559B517FEF94A009340E6 /* TicketBuying */;
+			targetProxy = E75559DC17FEF94A009340E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E75559C217FEF94A009340E6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E75559C317FEF94A009340E6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E75559CB17FEF94A009340E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E75559CC17FEF94A009340E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E75559E117FEF94A009340E6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E75559E217FEF94A009340E6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E75559E617FEF94A009340E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E75559E717FEF94A009340E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E75559E917FEF94A009340E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54DDC1C866EB4B519A9AF1C8 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TicketBuying/TicketBuying-Prefix.pch";
+				INFOPLIST_FILE = "TicketBuying/TicketBuying-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E75559EA17FEF94A009340E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54DDC1C866EB4B519A9AF1C8 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TicketBuying/TicketBuying-Prefix.pch";
+				INFOPLIST_FILE = "TicketBuying/TicketBuying-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E75559EC17FEF94A009340E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TicketBuying.app/TicketBuying";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TicketBuying/TicketBuying-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TicketBuyingTests/TicketBuyingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E75559ED17FEF94A009340E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TicketBuying.app/TicketBuying";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TicketBuying/TicketBuying-Prefix.pch";
+				INFOPLIST_FILE = "TicketBuyingTests/TicketBuyingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E75559B117FEF949009340E6 /* Build configuration list for PBXProject "TicketBuying" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E75559E617FEF94A009340E6 /* Debug */,
+				E75559E717FEF94A009340E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E75559E817FEF94A009340E6 /* Build configuration list for PBXNativeTarget "TicketBuying" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E75559E917FEF94A009340E6 /* Debug */,
+				E75559EA17FEF94A009340E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E75559EB17FEF94A009340E6 /* Build configuration list for PBXNativeTarget "TicketBuyingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E75559EC17FEF94A009340E6 /* Debug */,
+				E75559ED17FEF94A009340E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E794AAC4180442DE00B67243 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E79910841805A38A005CC9C8 /* Model 2.xcdatamodel */,
+				E78DA952180812E6007D93A7 /* Model 3.xcdatamodel */,
+				E77388B91816672200EA6140 /* Model 4.xcdatamodel */,
+				E794AAC5180442DE00B67243 /* Model.xcdatamodel */,
+			);
+			currentVersion = E77388B91816672200EA6140 /* Model 4.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = CoreData/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E75559AE17FEF949009340E6 /* Project object */;
+}
