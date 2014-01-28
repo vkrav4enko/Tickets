@@ -52,7 +52,7 @@
                                     <constraint firstAttribute="height" constant="30" id="n90-ro-PAp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="vQe-6S-vUk" id="jBD-1n-3CJ"/>
                                 </connections>
